@@ -1,0 +1,13 @@
+
+
+.Checking {
+    text-align: start;
+    font-size: 18px;
+    border: 2px solid palevioletred;
+    width: 100%;
+    background-color: rgba(255, 192, 203, .3);
+    margin: 16px;
+    width: 700px;
+    padding: 5px;
+    box-sizing: border-box;
+}
