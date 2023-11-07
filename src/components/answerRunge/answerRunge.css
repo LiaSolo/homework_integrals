@@ -1,0 +1,15 @@
+.AnswerRunge {
+    width: 520px;
+    text-align: start;
+    font-size: 14px;
+    border: 2px solid rgb(230, 196, 41);
+    background-color: rgba(246, 243, 148, 0.3);
+    margin-top: 15px;
+    
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.AnswerRunge hr {
+    border-color: rgb(230, 196, 41);
+}

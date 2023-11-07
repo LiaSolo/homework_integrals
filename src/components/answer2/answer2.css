@@ -1,0 +1,15 @@
+.Answer2 {
+    width: 520px;
+    text-align: start;
+    font-size: 14px;
+    border: 2px solid rgb(6, 154, 52);
+    background-color: rgba(118, 243, 145, 0.3);
+    margin-top: 15px;
+    
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.Answer2 hr {
+    border-color: rgb(6, 154, 52);
+}

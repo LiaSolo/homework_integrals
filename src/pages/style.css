@@ -1,0 +1,18 @@
+.show {
+  background-color: palevioletred;
+  color: white;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.displayFlex {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 10px;
+}
+

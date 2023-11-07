@@ -1,0 +1,16 @@
+
+
+.Checking2 {
+    text-align: start;
+    font-size: 14px;
+    border: 2px solid rgb(158, 78, 174);
+    width: 520px;
+    background-color: rgba(212, 176, 236, 0.3);
+    margin-top: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.Checking2 hr {
+    border-color: rgb(158, 78, 174);
+}

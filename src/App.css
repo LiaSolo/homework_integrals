@@ -1,23 +1,10 @@
 .App {
+  box-sizing: border-box;
   text-align: left;
-  font-size: 28px;
+  font-size: 24px;
+  padding: 30px;
 }
 
-.show {
-  background-color: palevioletred;
-  color: white;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  width: 80px;
-  font-size: 16px;
-}
-
-.checkHeader {
-  gap: 16px;
-  display: flex;
-  align-items: baseline;
-}
 
 
 

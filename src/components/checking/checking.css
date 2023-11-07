@@ -2,12 +2,15 @@
 
 .Checking {
     text-align: start;
-    font-size: 18px;
+    font-size: 14px;
     border: 2px solid palevioletred;
-    width: 100%;
+    width: 520px;
     background-color: rgba(255, 192, 203, .3);
-    margin: 16px;
-    width: 700px;
+    margin-top: 15px;
     padding: 5px;
     box-sizing: border-box;
+}
+
+.Checking hr {
+    border-color: palevioletred;
 }
