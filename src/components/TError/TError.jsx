@@ -1,9 +1,8 @@
-import './TError.css'
+import "./TError.css";
 import { InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
 
 export const TError = (props) => {
-
     return (
         <div className="TError">
             <div>
@@ -18,12 +17,14 @@ export const TError = (props) => {
             <hr />
             <div>
                 <InlineMath math={`f'(x)=\\cos(x)-x`} />
-                <div>|Max value| = 1</div>
+                <div>
+                    |Max value| = <InlineMath math={`1+\\pi`} />
+                </div>
             </div>
             <hr />
             <div>
                 <InlineMath math={`f''(x)=-\\sin(x)-1`} />
-                <div>|Max value| = 1</div>
+                <div>|Max value| = 2</div>
             </div>
             <hr />
             <div>
@@ -33,20 +34,34 @@ export const TError = (props) => {
             <hr />
             <div>
                 СКФ левого и правого прямоугольника:{" "}
-                <InlineMath math={`${(1 / 2) * Math.PI * props.step}`} />
+                <InlineMath
+                    math={`${(1 / 2) * Math.PI * (1 + Math.PI) * props.step}`}
+                />
             </div>
             <div>
                 СКФ среднего прямоугольника:{" "}
-                <InlineMath math={`${(1 / 24) * Math.PI * props.step**2}`} />
+                <InlineMath
+                    math={`${
+                        (1 / 24) * Math.PI * (1 + Math.PI) * props.step ** 2
+                    }`}
+                />
             </div>
             <div>
                 СКФ трапеции:{" "}
-                <InlineMath math={`${(1 / 12) * Math.PI * props.step**2}`} />
+                <InlineMath
+                    math={`${
+                        (1 / 12) * Math.PI * (1 + Math.PI) * props.step ** 2
+                    }`}
+                />
             </div>
             <div>
                 СКФ Симпсона:{" "}
-                <InlineMath math={`${(1 / 2880) * Math.PI * props.step**4}`} />
+                <InlineMath
+                    math={`${
+                        (1 / 2880) * Math.PI * (1 + Math.PI) * props.step ** 4
+                    }`}
+                />
             </div>
         </div>
     );
-}
+};

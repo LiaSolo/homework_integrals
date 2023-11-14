@@ -36,12 +36,12 @@ import { TError } from "../components/TError/TError";
 import AnswerRunge from "../components/answerRunge/answerRunge";
 
 export const Main = () => {
-    const [begin, setBegin] = useState(2);
+    const [begin, setBegin] = useState(0);
     const handleChangeBegin = (event) => {
         setBegin(Number(event.target.value));
     };
 
-    const [end, setEnd] = useState(3);
+    const [end, setEnd] = useState(Math.PI);
     const handleChangeEnd = (event) => {
         setEnd(Number(event.target.value));
     };
@@ -291,8 +291,8 @@ export const Main = () => {
                     />
                 </div>
             </div>
-            <div>Теоритическая погрешность</div>
-            <TError bottom={begin} top={end} step={h} />
+            <div>Теоретическая погрешность</div>
+            <TError bottom={0} top={Math.PI} step={h} />
             <div className="displayFlex">
                 <div>
                     Альтернативные функции для вычисления интеграла по СКФ
